@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    /* primary colors */
+    --red: #ea5353;
+    --cyan: #45d3d3;
+    --orange: #fcaf4a;
+    --blue: #549ef2;
+
+    /* neutral */
+    --very-dark-blue: hsl(234, 12%, 34%);
+    --grayish-blue: hsl(229, 6%, 66%);
+    --very-light-gray: hsl(0, 0%, 98%);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    background-color: var(--very-light-gray);
+    color: var(--grayish-blue);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 30px;
+}
+
+header {
+    text-align: center;
+}
+
+header h2 {
+    font-size: 34px;
+    font-weight: 200;
+    color: var(--very-dark-blue);
+}
+
+header h3 {
+    font-size: 34px;
+    font-weight: 600;
+    color: var(--very-dark-blue);
+}
+
+header p {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2.550rem;
+    margin-top: 3.50rem;
+}
+
+.box {
+    background-color: #fff;
+    border-radius: 7px;
+    padding: 30px;
+    box-shadow: 2px 2px 2px 2px rgba(51, 51, 51, 0.193);
+    text-align: right;
+}
+
+.box-text {
+    text-align: left;
+    margin-bottom: 1.5rem;
+}
+
+.box1 {
+    border-top: 4px solid var(--cyan);
+}
+
+.box2 {
+    border-top: 4px solid var(--red);
+}
+
+.box3 {
+    border-top: 4px solid var(--orange);
+}
+
+.box4 {
+    border-top: 4px solid var(--blue);
+}
+
+.box-text h5 {
+    font-size: 20px;
+    color: var(--very-dark-blue);
+    margin-bottom: 10px;
+}
+
+.box-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.580rem;
+}
+
+.box,
+.box4 {
+    align-self: center;
+}
+
+@media only screen and (max-width:768px) {
+    .main {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (max-width:425px) {
+   body{
+    font-size: 13px;
+   }
+
+   header h2{
+    font-size: 20px;
+   }
+
+   header h3{
+    font-size: 20px;
+   }
+
+   .box{
+    padding: 20px;
+   }
+
+   .box-text{
+    padding-bottom: 30px;
+   }
+
+}
